@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Murad ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #160014, #4b003d, #120012);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    padding: 35px 25px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(255, 70, 180, 0.25);
+    z-index: 2;
+}
+
+.page {
+    display: none;
+    animation: fade 1s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffe8f7;
+}
+
+button {
+    margin-top: 25px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #8b176f;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(255,255,255,0.7);
+}
+
+.name {
+    font-size: 20px;
+    color: #ff9fdf;
+    margin-bottom: 10px;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 25px;
+    animation: float 7s linear infinite;
+    opacity: 0.7;
+}
+
+.h1 { left: 10%; animation-delay: 0s; }
+.h2 { left: 25%; animation-delay: 2s; }
+.h3 { left: 45%; animation-delay: 4s; }
+.h4 { left: 65%; animation-delay: 1s; }
+.h5 { left: 85%; animation-delay: 3s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.big-heart {
+    font-size: 65px;
+    margin: 15px;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+    50% {
+        transform: scale(1.18);
+    }
+}
+
+.question {
+    font-size: 38px;
+    margin-top: 20px;
+    color: #ffb6e5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#noBtn {
+    background: #555;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+        padding: 28px 18px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .question {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div class="heart h1">❤️</div>
+<div class="heart h2">💕</div>
+<div class="heart h3">💗</div>
+<div class="heart h4">❤️</div>
+<div class="heart h5">💖</div>
+
+
+<div class="container">
+
+    <!-- PAGE 1 -->
+    <div class="page active" id="page1">
+
+        <div class="big-heart">❤️</div>
+
+        <div class="name">Hridy ❤️ Murad</div>
+
+        <h1>Hey Murad...</h1>
+
+        <p>
+            I have something I've been wanting to tell you
+            for a really long time. 🥺
+        </p>
+
+        <button onclick="nextPage(2)">
+            Open My Heart 💌
+        </button>
+
+    </div>
+
+
+    <!-- PAGE 2 -->
+    <div class="page" id="page2">
+
+        <h2>My Little Secret 🙈❤️</h2>
+
+        <p>
+            Dear Murad 💖,<br><br>
+
+            You already know that I've liked you since we were little...
+            but somehow, I could never tell you how I felt back then. 🥺
+            <br><br>
+
+            The way I felt about you when we were younger,
+            I still feel the same way even now. ❤️
+            <br><br>
+
+            Back then, I used to watch you from a distance
+            and quietly admire you.
+
+            Maybe I didn't really understand my feelings at that time,
+            but now I realize...
+            that feeling never truly went away.
+        </p>
+
+        <button onclick="nextPage(3)">
+            Read More 💕
+        </button>
+
+    </div>
+
+
+    <!-- PAGE 3 -->
+    <div class="page" id="page3">
+
+        <h2>And Now... I'm Falling for You Again ❤️</h2>
+
+        <p>
+            Back then, I only knew you from a distance.
+            But now, after talking to you and getting to know you better,
+            I've learned so much more about you. 🥺❤️
+            <br><br>
+
+            And you know what...
+            day by day, I feel like I'm falling for you all over again. ❤️
+            <br><br>
+
+            Every day, I like you a little more,
+            and somehow, you're becoming even more special to my heart.
+            <br><br>
+
+            I think... I really, truly love you a lot. 🥺💖
+        </p>
+
+        <button onclick="nextPage(4)">
+            One Last Thing... 🥺
+        </button>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+    <div class="page" id="page4">
+
+        <div class="big-heart">💗</div>
+
+        <p>
+            I want to spend my whole life with you. 🥺❤️
+            <br><br>
+
+            I want to always love you, care for you,
+            understand you, and be by your side
+            through every moment of life. ❤️
+            <br><br>
+
+            Please, never break my heart... please. 🥺
+            Because I really, really love you. ❤️
+            <br><br>
+
+            After keeping these feelings in my heart for so long,
+            I can finally say what I've always wanted to tell you...
+        </p>
+
+        <div class="question">
+            Will You Be Mine? ❤️
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="yesAnswer()">
+                Yes ❤️
+            </button>
+
+            <button id="noBtn" onclick="noAnswer()">
+                No 🙈
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- YES PAGE -->
+    <div class="page" id="yesPage">
+
+        <div class="big-heart">💖</div>
+
+        <h1>Yesss! 🥺❤️</h1>
+
+        <p>
+            You just made my heart the happiest. 🥹💕
+            <br><br>
+
+            Maybe this is the beginning of something
+            really beautiful...
+            <br><br>
+
+            <b>Hridy ❤️ Murad</b>
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function nextPage(number) {
+
+    document.querySelectorAll(".page").forEach(function(page) {
+        page.classList.remove("active");
+    });
+
+    document.getElementById("page" + number).classList.add("active");
+}
+
+
+function yesAnswer() {
+
+    document.querySelectorAll(".page").forEach(function(page) {
+        page.classList.remove("active");
+    });
+
+    document.getElementById("yesPage").classList.add("active");
+
+}
+
+
+function noAnswer() {
+
+    alert("Are you sure? 🥺👉👈❤️");
+
+}
+
+</script>
+
+</body>
+</html>
